@@ -43,6 +43,11 @@
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
+                    <execution>
+                        <configuration>
+                            <include>ca.blaw:paper-nms-maven-plugin</include>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
 
@@ -78,10 +83,6 @@
         <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>bytecode.space</id>
-            <url>https://repo.bytecode.space/repository/maven-public/</url>
         </repository>
     </repositories>
 

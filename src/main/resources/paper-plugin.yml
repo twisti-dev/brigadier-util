@@ -1,0 +1,26 @@
+name: Main
+version: '${project.version}'
+main: me.twisti.template.Main
+description: A plugin
+api-version: '1.19'
+authors: [ twisti ]
+bootstrapper: me.twisti.template.MainBootstrap
+loader: me.twisti.template.MainLoader
+has-open-classloader: false
+
+#dependencies:
+#  - name: DependencyName
+#   required: true
+#    bootstrap: false
+
+
+# plugin will load before these plugins are loaded.
+#load-before:
+#  - name: PluginName
+#    bootstrap: false
+
+
+# plugin will load after these plugins are loaded.
+#load-after:
+#  - name: PluginName
+#    bootstrap: false

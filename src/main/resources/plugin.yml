@@ -1,0 +1,5 @@
+name: Template
+version: '${project.version}'
+main: me.twisti.template.Main
+api-version: 1.19
+authors: [ twisti ]

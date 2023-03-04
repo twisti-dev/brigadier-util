@@ -43,11 +43,6 @@
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
-                    <execution>
-                        <configuration>
-                            <include>ca.blaw:paper-nms-maven-plugin</include>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
 
@@ -84,6 +79,12 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <!-- https://github.com/Mojang/brigadier#maven -->
+        <repository>
+            <id>minecraft-libraries</id>
+            <name>Minecraft Libraries</name>
+            <url>https://libraries.minecraft.net</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -108,6 +109,18 @@
             <artifactId>paper-nms</artifactId>
             <version>1.19.3-SNAPSHOT</version>
             <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- https://github.com/Mojang/brigadier#maven -->
+        <dependency>
+            <groupId>com.mojang</groupId>
+            <artifactId>brigadier</artifactId>
+            <version>1.0.18</version>
         </dependency>
     </dependencies>
 </project>

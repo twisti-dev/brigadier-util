@@ -4,7 +4,6 @@ import me.twisti.template.main.command.CommandManager;
 import me.twisti.template.main.listener.ListenerManager;
 import me.twisti.template.util.brigadier.BrigadierCommandManager;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.commands.CloneCommands;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
